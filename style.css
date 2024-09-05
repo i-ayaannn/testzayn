@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root { 
+    --primary-color: #449fe0; 
+    --secondary-color: #1f64a5; 
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", system-ui;
+    background-color: black;
+    color: #eee;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+button {
+    font-size: 14px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    scale: 1.1;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    /* background-color: #1f64a5; */
+    padding: 40px;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#aboutvue {
+    margin: auto;
+    width: 80%;
+    background-color: #222;
+    border-radius: 25px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+#about #founder {
+    height: fit-content;
+
+    margin: 40px;
+    margin-top: 70px;
+    border-radius: 45px;
+    background-color: #222;
+    max-width: 240px;
+    padding: 20px;
+    padding-bottom: 40px;
+    font-size: 14px;
+
+}
+
+#about #founder img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+#about #founder h1 {
+    margin-bottom:  5px;
+    color: var(--primary-color);
+}
+
+#about #vue {
+    border-radius: 45px;
+    background-color: #222;
+    padding: 40px;
+    font-size: 14px;
+    margin: 40px;
+    text-align: justify;
+}
+
+#about #vue h1 {
+    color: var(--primary-color);
+    /* margin-bottom: 10px; */
+    font-size: 40px;
+}
+
+#about #vue hr {
+    width: 180px;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    height: 300px;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    background-color: #222;
+    color: #eee;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+
+    #aboutvue {
+        flex-direction: column;
+    }
+
+    #aboutvue #founder {
+        margin: auto;
+        margin-top: 60px;
+    }
+    #aboutvue #vue {
+        margin: 5px;
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #aboutvue {
+        width: 100%;
+    }
+
+}

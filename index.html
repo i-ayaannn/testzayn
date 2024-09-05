@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png">
+        <nav>
+            <ul>
+                <li><button onclick="showSection('about')">AboutUs</button></li>
+                <li><button onclick="showSection('projects')">Projects</button></li>
+                <li><button onclick="showSection('services')">Services</button></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="section active">
+            <h1>Projects</h1>
+            <div class="grid">
+                <div class="card">Project 1</div>
+                <div class="card">Project 2</div>
+                <div class="card">Project 3</div>
+                <div class="card">Project 4</div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <div id="aboutvue">
+                <div id="founder">
+                  <img src="images/founder.png" alt="">
+                  <h1>Ayan Ansari</h1>
+                  <p>Founder of VUE DESIGNS</p>
+                </div>
+                <div id="vue">
+                  <h1>Vue Designs</h1>
+                  <hr>
+                  <p>At Vue Designs, we believe in transforming every brand's imagination into a vivid reality. <br><br> Our vision is to craft elegant and unique brand identities that resonate with your audience and distinguish your brand in a crowded marketplace. <br><br> We focus on creativity, precision, and attention to detail, ensuring that each design captures the essence of your brand and communicates your story with clarity and sophistication. <br><br> Whether you're launching a new venture or rebranding an established business, Vue Designs is committed to bringing your vision to life.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- services Section -->
+        <section id="services" class="section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
